@@ -1,2 +1,1 @@
-# EC602
-// EC602
+This is for mini projects in EC602, each FOLDER stands for one project.
