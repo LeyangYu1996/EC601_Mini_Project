@@ -1,1 +1,1 @@
-This is for mini projects in EC602, each FOLDER stands for one project.
+This is for mini projects in EC601, each FOLDER stands for one project.
