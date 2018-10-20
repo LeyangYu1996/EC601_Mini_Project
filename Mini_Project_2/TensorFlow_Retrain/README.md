@@ -30,7 +30,7 @@ For me, I chose to classificate between two kinds of fruits: apple and banana. T
 apple 0.98029584
 banana 0.019704156
 ```
-![apple2.jpeg](./apple2.jpeg | width=100)
+<img src="./apple2.jpeg" width="100">
 ```
 apple 0.9776897
 banana 0.022310298
