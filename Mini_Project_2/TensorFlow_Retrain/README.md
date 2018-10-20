@@ -21,7 +21,9 @@ This is the TensorFlow classification module
 In this case, the data set will be automatically divided into two parts, 80% will be training data and 20% will be verification data. You can change the rate manually using: ```--testing_percentage``` and ```--validation_percentage``` .
 
 2. In order to get the results of your training, you can use the label_image.py:</br>
-```python label_image.py --graph=/tmp/output_graph.pb --labels=/tmp/output_labels.txt --input_layer=Placeholder --output_layer=final_result --image=<TEST_IMAGE_PATH>```
+```
+python label_image.py --graph=/tmp/output_graph.pb --labels=/tmp/output_labels.txt --input_layer=Placeholder --output_layer=final_result --image=<TEST_IMAGE_PATH>
+```
 
 # 3. Results
 For me, I chose to classificate between two kinds of fruits: apple and banana. The results is:
