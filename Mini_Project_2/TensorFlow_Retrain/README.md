@@ -2,9 +2,9 @@ This is the TensorFlow classification module
 ## Steps to retrain TensorFlow module
 # 1. Prerequisites
 1. You will need numpy, TensorFlow and TensorFlow-hub to run this retraining program, you may download it using:</br>
-```$ pip install numpy```
-```$ pip install tensorflow```
-```$ pip install tensorflow-hub```
+```$ pip install numpy```</br>
+```$ pip install tensorflow```</br>
+```$ pip install tensorflow-hub```</br>
 
 2. Prepare your training set of images and your validation sets. I used [google-images-download](https://github.com/hardikvasa/google-images-download) to download pictures from google. You should put the images into different folders based on their categories, and the name of the folder should be the same as its category. ![folders](./folders.png)
 
