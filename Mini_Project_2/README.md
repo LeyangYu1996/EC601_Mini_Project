@@ -50,3 +50,50 @@ banana 0.022310298
 banana 0.9999838
 apple 1.6182457e-05
 ```
+## 2 YOLOv3
+### 2.1 Prerequisites 
+
+This is how to use YOLO in LINUX and it is NOT suitable for windows.
+
+You need to download and install Darknet to get your YOLOv3 up and ready to train:
+```$ git clone https://github.com/pjreddie/darknet```</br>
+
+Since we need to use it to train, you have better to get a computer with a Graphics. If you are using a Nvidia Graphic Card, you can download and install [CUDA](https://developer.nvidia.com/cuda-downloads) to let YOLO use your Graphics. Also, you are supposed to download and install OpenCV if you need more support for weird formats.
+
+Once you have downloaded CUDA, open Makefile under your Darknet folder, change the first line of the Makefile to:</br>
+```GPU = 1```</br>
+Now you can run:</br>
+```
+cd <DARKNET_FOLDER>
+make
+```
+Now your YOLO is prepared.
+
+### 2.2 Prepare your YOLO for training
+
+First you need your set of images, and you need to label the objects in the images using some tools. You may choose your tool as you want, and I am using [YOLO_mark](https://github.com/AlexeyAB/Yolo_mark). It can automatically generate the ```obj.names``` file, you have to create a ```yolo-obj.cfg```, and modify ```obj.data``` and ```train.txt``` according to [this page](https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects)
+
+You need a pre-trained weight file by running this:</br>
+```wget https://pjreddie.com/media/files/darknet53.conv.74```</br>
+
+### 2.3 Starting training
+
+You can now start training your module by running: notice:the dir of ```obj.data```should be point to the file you modified before </br>
+```./darknet detector train cfg/obj.data cfg/yolo-obj.cfg darknet53.conv.74```</br>
+
+### 2.4 Results
+
+I used up to 100 images of banana to train this, the results is listed below:
+
+<img src="./YOLOv3_Results/banana1.jpg" width="500">
+
+```
+banana: 57%
+```
+<img src="./YOLOv3_Results/banana2.jpg" width="500">
+
+```
+banana: 92%
+banana: 78%
+banana: 63%
+```
