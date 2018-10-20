@@ -31,6 +31,7 @@ apple 0.98029584
 banana 0.019704156
 ```
 <img src="./apple2.jpeg" width="100">
+
 ```
 apple 0.9776897
 banana 0.022310298
