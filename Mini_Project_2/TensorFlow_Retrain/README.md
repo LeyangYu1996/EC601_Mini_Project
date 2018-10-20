@@ -1,7 +1,7 @@
 This is the TensorFlow classification module
 ## Steps to retrain TensorFlow module
 # 1. Prerequisites
-1. You will need numpy, TensorFlow and TensorFlow-hub to run this retraining program, you may download it using:
+1. You will need numpy, TensorFlow and TensorFlow-hub to run this retraining program, you may download it using:<\br>
 ```$ pip install numpy```
 ```$ pip install tensorflow```
 ```$ pip install tensorflow-hub```
