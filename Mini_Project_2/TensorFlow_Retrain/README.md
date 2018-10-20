@@ -9,11 +9,16 @@ This is the TensorFlow classification module
 2. Prepare your training set of images and your validation sets. I used [google-images-download](https://github.com/hardikvasa/google-images-download) to download pictures from google. You should put the images into different folders based on their categories, and the name of the folder should be the same as its category. ![folders](./folders.png)
 
 3. You also need to download retraining module from the github of tensorflow by using pip:</br>
-```$ cd <YOUR_DESIRED_FOLDER>```</br>
-```$ curl -LO https://github.com/tensorflow/hub/raw/master/examples/image_retraining/retrain.py```</br>
+```
+$ cd <YOUR_DESIRED_FOLDER>
+$ curl -LO https://github.com/tensorflow/hub/raw/master/examples/image_retraining/retrain.py
+```
+</br>
 
 4. You may download label_image.py from github to test your training:</br>
-```$ curl -LO https://github.com/tensorflow/tensorflow/raw/master/tensorflow/examples/label_image/label_image.py```
+```
+$ curl -LO https://github.com/tensorflow/tensorflow/raw/master/tensorflow/examples/label_image/label_image.py
+```
 
 # 2. Training and get your results
 1. After you have downloaded all the required files above, and have your set of images ready, you can start training using:</br>
