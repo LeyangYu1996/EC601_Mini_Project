@@ -25,17 +25,17 @@ In this case, the data set will be automatically divided into two parts, 80% wil
 
 #3. Results
 For me, I chose to classificate between two kinds of fruits: apple and banana. The results is:
-![apple1.jpeg](./apple1.jpeg)
+![apple1.jpeg](./apple1.jpeg | width=100)
 ```
 apple 0.98029584
 banana 0.019704156
 ```
-![apple2.jpeg](./apple2.jpeg)
+![apple2.jpeg](./apple2.jpeg | width=100)
 ```
 apple 0.9776897
 banana 0.022310298
 ```
-![banana.jpeg](./banana.jpeg)
+![banana.jpeg](./banana.jpeg | width=100)
 ```
 banana 0.9999838
 apple 1.6182457e-05
