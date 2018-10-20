@@ -78,9 +78,10 @@ You need a pre-trained weight file by running this:</br>
 
 ### 2.3 Starting training
 
-You can now start training your module by running: notice:the dir of ```obj.data```should be point to the file you modified before </br>
+You can now start training your module by running:</br>
 ```./darknet detector train cfg/obj.data cfg/yolo-obj.cfg darknet53.conv.74```</br>
-
+notice:the dir of ```obj.data```should be point to the file you modified before 
+ 
 ### 2.4 Results
 
 I used up to 100 images of banana to train this, the results is listed below:
