@@ -50,7 +50,7 @@ banana 0.022310298
 banana 0.9999838
 apple 1.6182457e-05
 ```
-## 2 YOLOv3
+## 2 YOLOv3/Darknet
 ### 2.1 Prerequisites 
 
 This is how to use YOLO in LINUX and it is NOT suitable for windows.
@@ -98,3 +98,16 @@ banana: 92%
 banana: 78%
 banana: 63%
 ```
+## 3 Comparison
+
+# 3.1 Tensorflow
+
+From the document of Tensorflow, I knew that this can be more flexible than I thought. During this project, the Tensorflow can automatically decide which region of the image to use to detect the object, so I don't need to label the object by myself. Also, it can automatically download the pre-trained model from internet so it is easy to use.
+
+However, what I am using for this project is only a small part of it. In fact, it can be used for object detection by using other [modules](https://github.com/tensorflow/hub/blob/master/examples/colab/object_detection.ipynb), which can provide more abilities, but training it is not so easy.
+
+What's more, the tiny-yolo is based on Tensorflow.
+
+# 3.2 Darknet
+
+The YOLOv3 is based on Darknet, and it is able to draw labels on objects. It is a little bit hard to use, mostly because it takes too much CPU and GPU to train the module and run the program. By using CUDA it can run way faster, but it still need a lot of time to complete training.
