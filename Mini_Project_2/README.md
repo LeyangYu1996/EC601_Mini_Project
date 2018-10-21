@@ -76,6 +76,8 @@ First you need your set of images, and you need to label the objects in the imag
 You need a pre-trained weight file by running this:</br>
 ```wget https://pjreddie.com/media/files/darknet53.conv.74```</br>
 
+You can adjust the content of your```obj.data```to set up your validation set and training set by changing the content of ```valid```and```train```, you can set up a new file named```valid.txt```and input the file names that you want to set as valid data.
+
 ### 2.3 Starting training
 
 You can now start training your module by running:</br>
