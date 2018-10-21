@@ -100,6 +100,20 @@ banana: 92%
 banana: 78%
 banana: 63%
 ```
+<img src="./YOLOv3_Results/apple1.jpg" width="500">
+
+```
+apple: 100%
+apple: 100%
+apple: 100%
+apple: 100%
+apple: 94%
+```
+<img src="./YOLOv3_Results/apple2.jpg" width="500">
+
+```
+apple: 100%
+```
 ## 3 Comparison
 
 # 3.1 Tensorflow
