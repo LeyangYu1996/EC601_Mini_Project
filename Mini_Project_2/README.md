@@ -23,7 +23,7 @@ $ curl -LO https://github.com/tensorflow/tensorflow/raw/master/tensorflow/exampl
 ### 1.2 Training and get your results
 After you have downloaded all the required files above, and have your set of images ready, you can start training using:</br>
 ```python retrain.py --image_dir <YOUR_DIRECTION>```</br>
-In this case, the data set will be automatically divided into two parts, 80% will be training data and 10% will be verification data, those data will always be used during training. Another 10% data will be used as testing set and they will only be used less to predict the performance of it. You can change the rate manually using: ```--testing_percentage``` and ```--validation_percentage``` .
+In this case, the data set will be automatically divided into two parts, 80% will be training data and 20% will be verification data. You can change the rate manually using: ```--testing_percentage``` and ```--validation_percentage``` .
 
 In order to get the results of your training, you can use the label_image.py:</br>
 ```
@@ -76,7 +76,7 @@ First you need your set of images, and you need to label the objects in the imag
 You need a pre-trained weight file by running this:</br>
 ```wget https://pjreddie.com/media/files/darknet53.conv.74```</br>
 
-You can adjust the content of your```obj.data```to set up your validation set and training set by changing the content of ```valid```and```train```, you can set up a new file named```valid.txt```and input the file names that you want to set as valid data.
+You can adjust the content of your```obj.data```to set up your validation set and training set by changing the content of ```valid```and```train```, you need to set up a new file named```valid.txt```and put the file names of the pictures that you want to set as valid data from```train.txt```to```valid.txt```.
 
 ### 2.3 Starting training
 
@@ -86,7 +86,7 @@ notice:the dir of ```obj.data```should be point to the file you modified before
  
 ### 2.4 Results
 
-I used up to 100 images of banana to train this, the results is listed below:
+I used up to 100 images of banana and 100 images of apple to train this, the results is listed below:
 
 <img src="./YOLOv3_Results/banana1.jpg" width="500">
 
@@ -126,7 +126,4 @@ What's more, the tiny-yolo is based on Tensorflow.
 
 # 3.2 Darknet
 
-The YOLOv3 is based on Darknet, and it is able to draw labels on objects. It is able to print labels on the objects, which enables it to be used in more cases. However, getting the result can take a lot of time and this could make it hard to make real-time detection.
-
-Also, it is a little bit hard to train, mostly because it takes too much CPU and GPU to train the module and run the program. By using CUDA it can run way faster, but it still need a lot of time (maybe up to days) to complete training.
-
+The YOLOv3 is based on Darknet, and it is able to draw labels on objects. It is a little bit hard to use, mostly because it takes too much CPU and GPU to train the module and run the program. By using CUDA it can run way faster, but it still need a lot of time to complete training.
