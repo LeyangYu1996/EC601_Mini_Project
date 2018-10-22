@@ -31,7 +31,7 @@ python label_image.py --graph=/tmp/output_graph.pb --labels=/tmp/output_labels.t
 ```
 
 ### 1.3 Results
-For me, I chose to classificate between two kinds of fruits: apple and banana. I used 77 images of apple and 73 images of banana. The results is:
+For me, I chose to classificate between two kinds of fruits: apple and banana. I used 98 images of apple and 99 images of banana. The results is:
 <img src="./apple1.jpeg" width="500">
 
 ```
