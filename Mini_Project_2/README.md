@@ -76,7 +76,7 @@ First you need your set of images, and you need to label the objects in the imag
 You need a pre-trained weight file by running this:</br>
 ```wget https://pjreddie.com/media/files/darknet53.conv.74```</br>
 
-You can adjust the content of your```obj.data```to set up your validation set and training set by changing the content of ```valid```and```train```, you can set up a new file named```valid.txt```and input the file names that you want to set as valid data.
+You can adjust the content of your```obj.data```to set up your validation set and training set by changing the content of ```valid```and```train```, you should set up a new file named```valid.txt```and input the file names that you want to set as valid data. In this case, I used 67 images of apple and 63 images of banana to train the module, and 10 images each to as valid dataset.
 
 ### 2.3 Starting training
 
