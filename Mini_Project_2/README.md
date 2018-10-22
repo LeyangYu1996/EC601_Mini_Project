@@ -31,7 +31,7 @@ python label_image.py --graph=/tmp/output_graph.pb --labels=/tmp/output_labels.t
 ```
 
 ### 1.3 Results
-For me, I chose to classificate between two kinds of fruits: apple and banana. The results is:
+For me, I chose to classificate between two kinds of fruits: apple and banana. I used 77 images of apple and 73 images of banana. The results is:
 <img src="./apple1.jpeg" width="500">
 
 ```
@@ -86,7 +86,7 @@ notice:the dir of ```obj.data```should be point to the file you modified before
  
 ### 2.4 Results
 
-I used up to 100 images of banana to train this, the results is listed below:
+I used up to 77 images of apple and 73 images of banana to train this, the results is listed below:
 
 <img src="./YOLOv3_Results/banana1.jpg" width="500">
 
