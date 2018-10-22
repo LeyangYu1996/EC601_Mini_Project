@@ -58,7 +58,7 @@ This is how to use YOLO in LINUX and it is NOT suitable for windows.
 You need to download and install Darknet to get your YOLOv3 up and ready to train:</br>
 ```$ git clone https://github.com/pjreddie/darknet```</br>
 
-Since we need to use it to train, you have better to get a computer with a Graphics. If you are using a Nvidia Graphic Card, you can download and install [CUDA](https://developer.nvidia.com/cuda-downloads) to let YOLO use your Graphics. Also, you are supposed to download and install OpenCV if you need more support for weird formats.
+Since we need to use it to train, you have better to get a computer with a Graphics. If you are using a Nvidia GPU, you can download and install [CUDA](https://developer.nvidia.com/cuda-downloads) to let YOLO use your GPU. Also, you are supposed to download and install OpenCV if you need more support for weird formats.
 
 Once you have downloaded CUDA, open Makefile under your Darknet folder, change the first line of the Makefile to:</br>
 ```GPU = 1```</br>
