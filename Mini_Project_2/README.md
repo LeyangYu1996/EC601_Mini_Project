@@ -31,7 +31,7 @@ python label_image.py --graph=/tmp/output_graph.pb --labels=/tmp/output_labels.t
 ```
 
 ### 1.3 Results
-For me, I chose to classificate between two kinds of fruits: apple and banana. I used 73 images of banana and 77 images of apple. The results is:
+For me, I chose to classificate between two kinds of fruits: apple and banana. The results is:
 <img src="./apple1.jpeg" width="500">
 
 ```
@@ -76,7 +76,7 @@ First you need your set of images, and you need to label the objects in the imag
 You need a pre-trained weight file by running this:</br>
 ```wget https://pjreddie.com/media/files/darknet53.conv.74```</br>
 
-You can adjust the content of your```obj.data```to set up your validation set and training set by changing the content of ```valid```and```train```, you need to set up a new file named```valid.txt```and put the file names of the pictures that you want to set as validation data from```train.txt```to```valid.txt```. In this case, I put 10 pictures for each class into```vaild.txt```
+You can adjust the content of your```obj.data```to set up your validation set and training set by changing the content of ```valid```and```train```, you can set up a new file named```valid.txt```and input the file names that you want to set as valid data.
 
 ### 2.3 Starting training
 
@@ -86,7 +86,7 @@ notice:the dir of ```obj.data```should be point to the file you modified before
  
 ### 2.4 Results
 
-I used 73 images of banana and 77 images of apple to train this, the results is listed below:
+I used up to 100 images of banana to train this, the results is listed below:
 
 <img src="./YOLOv3_Results/banana1.jpg" width="500">
 
